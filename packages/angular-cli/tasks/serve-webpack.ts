@@ -79,8 +79,7 @@ export default Task.extend({
       proxy: proxyConfig,
       watchOptions: {
         poll: CliConfig.fromProject().config.defaults.poll
-      },
-      https: commandOptions.ssl,
+      }
     };
 
     if (sslKey != null && sslCert != null) {
